@@ -71,4 +71,13 @@ button:hover {
     grid-column: span 2;
 }
 
+@media (max-widtg: 400px) {
+    .button {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
 
+.display {
+    font: 1.5rem;
+}
