@@ -5,7 +5,7 @@ buttons.forEach(btn => {
     btn.addEventListener('click', () => hand1eInput(btn.innerText)); 
 });
 
-function hand1eInput(value) {
+function handleInput(value) {
     if (value === 'c') {
         display.innerText = '0';
     } else if (value === '=') {
