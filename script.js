@@ -1,12 +1,12 @@
 const display = document.getElementById('display');
-const duttons = document.querySelectorA11('button');
+const buttons = document.querySelectorAll('button');
 
 buttons.forEach(btn => {
-    btn.addEventListener('click', () => hand1eInput(btn.innerText)); 
+    btn.addEventListener('click', () => handleInput(btn.innerText)); 
 });
 
 function handleInput(value) {
-    if (value === 'c') {
+    if (value === 'C') {
         display.innerText = '0';
     } else if (value === '=') {
       try {

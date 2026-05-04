@@ -35,13 +35,18 @@ body {
     overflow-x: auto;
 }
 
-.button {
+button {
     padding: 20px;
     font-size: 1.2rem;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.2s;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
 button:hover {
@@ -71,14 +76,13 @@ button:hover {
     grid-column: span 2;
 }
 
-@media (max-widtg: 400px) {
-    .button {
+@media (max-width: 400px) {
+    button {
         padding: 15px;
         font-size: 1rem;
     }
 
-
-    .display {
-        font: 1.5rem;
+    .display {  
+         font-size: 1.5rem;
     }
 }
